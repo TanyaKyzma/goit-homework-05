@@ -427,9 +427,41 @@
    </button>
 <p class="modal-text">Leave your contacts and we will call you back</p>
 <form action="#" class="modal-form">
-    <div class="">
+
+    <div class="block">
         <label class="modal-label" for="user-name"> Name </label>
+      <div class="subblock">
+        <input type="text"  class="modal-field" name="user-name" id="user-name" autocomplete="off" />
+         <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+      </div>
+ </div>
+
+<div class="block">
+    <label class="modal-label" for="user-name"> Name </label>
+    <div class="subblock">
+        <input type="text" class="modal-field" name="user-name" id="user-name" autocomplete="off" />
+        <svg class="modal-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-phone-black"></use>
+        </svg>
     </div>
+</div>
+
+<div class="block">
+    <label class="modal-label" for="user-name"> Name </label>
+    <div class="subblock">
+        <input type="text" class="modal-field" name="user-name" id="user-name" autocomplete="off" />
+        <svg class="modal-icon" width="18" height="24">
+            <use href="./images/icons.svg#icon-email-black"></use>
+        </svg>
+    </div>
+</div>
+
+<div class="textarea-block">
+    <label class="modal-label" for="user-comment"> Comment </label>
+    <textarea class="modal-textarea" name="user-comment" id="user-comment" rows="8"  placeholder="Text input"></textarea>
+</div>
 
 </form>
  </div>

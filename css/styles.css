@@ -671,9 +671,5 @@ margin-bottom: 16px;
        height: 24px;
    }
  /* Modal*/
- .backdrop{
-    background-color:var(--bg-hero, rgba(46, 47, 66, 0.40));
-    position: fixed;
-    inset:0
- }
+
 
