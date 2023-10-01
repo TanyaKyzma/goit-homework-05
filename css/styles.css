@@ -680,8 +680,16 @@ margin-bottom: 16px;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    visibility: visible;
    }
 
+   .is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+   }
   .modal{
     position: absolute;
     top:50%;
@@ -726,11 +734,11 @@ background-color: var(--bg-pressed-state);
 .modal-button[type='button']:focus .modal-close-icon {
     fill: var(--c-white);
 }
-/*
+
 .modal-close-icon{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-*/
+
 .modal-text{
     font-weight: 500;
     font-size: 16px;
@@ -767,7 +775,7 @@ background-color: var(--bg-pressed-state);
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
    }
-   .modal-zone:focus{
+   .modal-icon:focus{
     border-color: var(--c-brand);
    }
 
@@ -808,7 +816,7 @@ background-color: var(--bg-pressed-state);
     .checkbox-block{
        margin-bottom: 24px;
      }       
-   input[type="checkbox"].user-privacy-span :checked {
+   input[type="checkbox"]:checked{
     background-color:var(--bg-pressed-state);
     border: none;
     fill:var(--c-light);
@@ -838,7 +846,8 @@ background-color: var(--bg-pressed-state);
     color:var(--c-brand);
 }
 
-.modal-button-end{
+.modal-button-fin{
+    line-height: 1.5px;
         font-family: "Roboto", sans-serif;
         display: block;
         min-width: 169px;
@@ -853,7 +862,6 @@ background-color: var(--bg-pressed-state);
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: 1.5px;
         letter-spacing: 0.04em;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin-left: 119px;
