@@ -778,10 +778,7 @@ background-color: var(--bg-pressed-state);
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
    }
-   .modal-icon:focus{
-    border-color: var(--c-brand);
-   }
-
+   
    .modal-icon{
     position: absolute;
     left: 16px;
@@ -790,8 +787,8 @@ background-color: var(--bg-pressed-state);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
-   svg.modal-icon:focus{
-    fill: var(--c-brand);
+   .modal-zone:focus+.modal-icon {
+       fill: var(--c-brand);
    }
 
    .textarea-block{
@@ -867,5 +864,4 @@ background-color: var(--bg-pressed-state);
         letter-spacing: 0.04em;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin-left: 119px;
-        line-height: 1.5px;
 }
